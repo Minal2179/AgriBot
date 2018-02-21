@@ -107,9 +107,7 @@ def initial_greet_talk(greet_sent_sentence):
                 "who":["what","how","when","which batsman","which player"],
                 "how": ["what", "whwn", "when"],
                 "when": ["what", "how", "who"],
-                "what": ["who", "how", "when"],
-                "which batsman":["who"],
-		"run":["runs"],"runs":["run"],"balls":["ball"],"ball":["balls"],"wicket":["wickets"],"wickets":["wicket"],"maximum":["most number"],"most":["maximum"]}
+                "what": ["who", "how", "when"]}
     stopWords = ("didn't", 'been', 'wouldn', 'because', 'isn', "you'd", 'just', 'his', "weren't", 'not', 'having', 'about', 'down', 'him', 'shan', 'ours', "you've", 'yours', "hadn't", 'and', 'after', 'can', 'each', 'mightn', 'the', 'over', 'd', 'once', 'such', 'this', 'with', "hasn't", 'ma', 'mustn', 'or', 'only', 'too', 'did', 'was', 'll', 'hadn', 'weren', 'y', 'be', 'doing', 'it', 'further', 'there', 'any', 'herself', 'he', 'being', 'when', 'm', "aren't", 'up', "haven't", 'myself', 'shouldn', "don't", 'more', 'if', 'her', 'needn', 'your', 'ourselves', 'between', 'against', 'itself', 'does', 'she', 'while', "isn't", "doesn't", 'own', 'through', 'didn', 'its', 'by', "wouldn't", 'where', 'had', "won't", 'you', 'some', 'ain', 'am', "that'll", 'so', 'during', 'won', 'few', 'o', 'a', 'couldn', 'above', 're', 'on', 's', "needn't", 'out', "couldn't", 'but', 'in', 'himself', "shouldn't", 'we', "mightn't", 'aren', 'before', 'until', 'most', 'very', 'they', 'both', 'all', 'our', 'of', 'to', 'nor', 'than', "should've", 'an', 'here', 'at', 'their', 'again', "it's", 'are', 'now', 'theirs', 'don', 'haven', 'i', "shan't", 'other', 'is', 'has', 'doesn', 'hasn', 'have', "she's", 'hers', "mustn't", 'below', "wasn't", 't', 'under', 'do', 'then', 'were', 've', 'should', 'themselves', 'my', 'off', 'no', 'from', 'as', 'same', 'for', 'into', 'me', 'wasn', 'will', "you're", 'yourself', 'them', 'yourselves', "you'll", 'these', 'those', 'that')
     liss = greet_sent_sentence.split()
     fin_array=[]
@@ -172,7 +170,6 @@ def initial_greet_talk(greet_sent_sentence):
 print "Agribot says : Hello"
 while 1:
     greet = raw_input('Your Response : ')
-    print greet
     if greet.lower()=="yes":
         break
     if greet.lower()=="no":
