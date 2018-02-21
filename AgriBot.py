@@ -201,7 +201,7 @@ while True:
 
     # Handling yes/no questions
     if entity_type == "YESNO":
-        yesno.answeryesno(article, query)
+        rhetoricalquestion.answeryesno(article, query)
         continue
 
     # Get sentence keywords
