@@ -6,7 +6,7 @@ enum34==1.1.6
 flake8==3.5.0
 idna==2.6
 mccabe==0.6.1
-nltk==3.2.5
+nltk==3.4.5
 numpy==1.14.1
 pathlib==1.0.1
 pew==1.1.2
